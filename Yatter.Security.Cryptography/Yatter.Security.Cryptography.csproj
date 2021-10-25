@@ -3,6 +3,25 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>Anthony Harrison</Authors>
+    <Copyright>Anthony Harrison</Copyright>
+    <PackageIconUrl>https://avatars.githubusercontent.com/u/92665945</PackageIconUrl>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Owners>Anthony Harrison</Owners>
+    <PackageProjectUrl>https://github.com/YatterOfficial/Yatter.Security.Cryptography</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReleaseNotes>Alpha Release.</PackageReleaseNotes>
+    <Summary>Yatter Cryptography using System.Security.Cryptography</Summary>
+    <PackageTags>Yatter</PackageTags>
+    <Title>Yatter.Security.Cryptography</Title>
+    <Description>Yatter Cryptography using System.Security.Cryptography</Description>
+    <PackageId>Yatter.Security.Cryptography</PackageId>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
-
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
 </Project>
