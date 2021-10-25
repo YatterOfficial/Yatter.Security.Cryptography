@@ -25,8 +25,11 @@ namespace Yatter.Security.Cryptography
         public CryptographyKeyManager() { }
 
         /// <summary>
-        /// Encrypts data with the RSA algorithm.
+        /// Encrypts data with the RSA algorithm. Prior to calling this function, either CreateKeySet(), ImportRSAPublicKey(...), or ImportRSAPrivateKey(...) must have been called. 
         /// </summary>
+        /// <see cref="CreateKeySet"/>
+        /// <see cref="ImportRSAPublicKey"/>
+        /// <see cref="ImportRSAPrivateKey"/>
         /// <param name="text">Text to be encrypted.</param>
         /// <returns>Text that has been encrypted with the RSA algorithm.</returns>
         public string RSAEncrypt(string text)
@@ -47,8 +50,11 @@ namespace Yatter.Security.Cryptography
         }
 
         /// <summary>
-        /// Encrypts data with the RSA algorithm.
+        /// Encrypts data with the RSA algorithm. Prior to calling this function, either CreateKeySet(), ImportRSAPublicKey(...), or ImportRSAPrivateKey(...) must have been called. 
         /// </summary>
+        /// <see cref="CreateKeySet"/>
+        /// <see cref="ImportRSAPublicKey"/>
+        /// <see cref="ImportRSAPrivateKey"/>
         /// <param name="text">Text to be encrypted.</param>
         /// <returns>Text that has been encrypted with the RSA algorithm and converted to Base64.</returns>
         public string RSAEncryptBase64(string text)
@@ -60,8 +66,10 @@ namespace Yatter.Security.Cryptography
         }
 
         /// <summary>
-        /// Decrypts data with the RSA algorithm.
+        /// Decrypts data with the RSA algorithm. Prior to calling this function, either CreateKeySet(), or ImportRSAPrivateKey(...) must have been called. 
         /// </summary>
+        /// <see cref="CreateKeySet"/>
+        /// <see cref="ImportRSAPrivateKey"/>
         /// <param name="cypher">A string of RSA cypher.</param>
         /// <returns>The decrypted data, which is the original plain text before encryption.</returns>
         public string RSADecryptFromString(string cypher)
@@ -74,8 +82,10 @@ namespace Yatter.Security.Cryptography
         }
 
         /// <summary>
-        /// Decrypts data in Base64 format with the RSA algorithm.
+        /// Decrypts data in Base64 format with the RSA algorithm. Prior to calling this function, either CreateKeySet(), or ImportRSAPrivateKey(...) must have been called. 
         /// </summary>
+        /// <see cref="CreateKeySet"/>
+        /// <see cref="ImportRSAPrivateKey"/>
         /// <param name="base64Cypher">A string of Base64-Encoded RSA cypher.</param>
         /// <returns>The decrypted data, which is the original plain text before encryption.</returns>
         public string RSADecryptFromBase64String(string base64Cypher)
@@ -112,7 +122,6 @@ namespace Yatter.Security.Cryptography
 
             return bytesRead;
         }
-
 
         /// <summary>
         /// Creates a public and private key as RSAParameters that can be exported, used to encrypt, and used to decrypt. Should not be called if either of a public key or private key have been imported.
