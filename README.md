@@ -10,5 +10,7 @@ You can either clone the code or accept it as a tutorial.
 
 ![GitHub](https://img.shields.io/github/license/yatterofficial/Yatter.Security.Cryptography?style=for-the-badge)
 
+[![Yatter.Security.Cryptography on fuget.org](https://www.fuget.org/packages/Yatter.Security.Cryptography/badge.svg)](https://www.fuget.org/packages/Yatter.Security.Cryptography)
+
 
 
