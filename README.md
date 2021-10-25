@@ -12,5 +12,7 @@ You can either clone the code or accept it as a tutorial.
 
 [![Yatter.Security.Cryptography on fuget.org](https://www.fuget.org/packages/Yatter.Security.Cryptography/badge.svg)](https://www.fuget.org/packages/Yatter.Security.Cryptography)
 
+y@R and You-At-A-Resource are trademarks of Count Anthony Harrison, operating from the United Kingdom
+
 
 
