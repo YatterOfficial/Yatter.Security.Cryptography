@@ -4,7 +4,7 @@ Using ONLY .NET Code from System.Security.Cryptography to both encrypt and decry
 
 You can either clone the code or accept it as a tutorial.
 
-- We have made this project open-source under the MIT Licence so that developers who are creating third-party content for our soon to be released y@R app, have a common pattern of encrypting data that they intend pushing to our back-end.
+- We have made this project open-source under the MIT Licence so that developers who are creating third-party content for our soon to be released y@R app, have a common pattern of encrypting data that they intend pushing to our back-end, as well as they having a common pattern of creating their own public keys so that we can send secure information back to them.
 
 ![GitHub](https://img.shields.io/github/license/yatterofficial/Yatter.UI.ListBuilder.Serialization?style=for-the-badge)
 
